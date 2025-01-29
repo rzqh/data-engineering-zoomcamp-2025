@@ -16,4 +16,14 @@ services:
       - PGADMIN_DEFAULT_PASSWORD=root
     ports:
       - "8080:80"
-    
+
+# command buat run
+# docker run -it \
+#     -e POSTGRES_USER="root" \
+#     -e POSTGRES_PASSWORD="root" \
+#     -e POSTGRES_DB="ny_taxi" \
+#     -v /Users/user/Documents/data-talks/data-engineering-zoomcamp-2025/repo/data-engineering-zoomcamp/01-docker-terraform/2_docker_sql/ny_taxi_postgres_data:/var/lib/postgresql/data \
+#     -p 5432:5432 \
+#   postgres:13
+# NB:
+# 1. gabisa pake $(pwd) kecuali di linux 
